@@ -149,5 +149,3 @@ describe 'The directors_database method can be processed by the studios_totals m
 
   end
 end
-
-pp :test_data
