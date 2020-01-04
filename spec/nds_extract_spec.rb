@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pp'
 
 describe 'provided method' do
   describe 'flatten_a_o_a' do
@@ -148,3 +149,5 @@ describe 'The directors_database method can be processed by the studios_totals m
 
   end
 end
+
+pp :test_data
