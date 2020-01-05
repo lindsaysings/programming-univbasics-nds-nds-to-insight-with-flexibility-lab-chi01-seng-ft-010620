@@ -48,13 +48,21 @@ end
 
 
 def gross_per_studio(collection)
+  result = {}
   i = 0
-  collection = movies_collection[i]
-  total = 0
-  while i < collection. length do
-    movies_with_director_name(director_name, movie_data)
-end
-end
+    studio_name = collection[i][:studio]
+    studio_total = 0
+
+    # If there's no key for this number, add the number as a key and assign it
+    # a new Array for holding future snacks with that price
+    if !result[studio_name]
+      result[studio_name] = collection[i][:worldwide_gross]
+    else
+      studio_total += collection[i][:worldwide_gross]
+    end
+    i += 1
+    result
+  end
 
 def movies_with_directors_set(source)
   arr = []
