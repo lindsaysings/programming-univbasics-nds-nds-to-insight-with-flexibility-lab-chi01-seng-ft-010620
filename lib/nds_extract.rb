@@ -59,7 +59,8 @@ def gross_per_studio(collection)
     if !studio_grand_total[studio_name]
       studio_grand_total[studio_name] = collection[i][:worldwide_gross]
     else
-      studio_movie_total += collection[i][:worldwide_gross]
+      studio_grand_total[studio_name] += collection[i][:worldwide_gross]
+      #studio_movie_total += collection[i][:worldwide_gross]
     end
     i += 1
     
