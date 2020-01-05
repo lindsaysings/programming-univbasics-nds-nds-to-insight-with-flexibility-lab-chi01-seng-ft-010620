@@ -53,7 +53,7 @@ def gross_per_studio(collection)
     
     while i < collection.length do
     studio_name = collection[i][:studio]
-    studio_movie_total = 0
+    studio_movie_total = collection[i][:worldwide_gross]
     # If there's no key for this number, add the number as a key and assign it
     # a new Array for holding future snacks with that price
     if !result[studio_name]
