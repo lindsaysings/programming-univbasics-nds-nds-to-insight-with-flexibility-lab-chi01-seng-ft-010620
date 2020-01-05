@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pp'
 
 describe 'provided method' do
   describe 'flatten_a_o_a' do
