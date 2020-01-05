@@ -63,6 +63,7 @@ def movies_with_directors_set(source)
   while i < source.length do
   dir_names = source[i][:director_name]
   movie_titles = source[i][:title]
+  hash = source[i]
     arr << movies_with_director_key(dir_names, movie_titles)
     i += 1
   end
