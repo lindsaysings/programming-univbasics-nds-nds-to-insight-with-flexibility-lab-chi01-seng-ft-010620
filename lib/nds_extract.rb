@@ -57,9 +57,9 @@ def gross_per_studio(collection)
     # If there's no key for this number, add the number as a key and assign it
     # a new Array for holding future snacks with that price
     if !studio_grand_total[studio_name]
-      studio_grand_total[studio_name] = collection[i][:worldwide_gross]
+      studio_grand_total[studio_name] = studio_movie_total
     else
-      studio_grand_total[studio_name] += collection[i][:worldwide_gross]
+      studio_grand_total[studio_name] += studio_movie_total
       #studio_movie_total += collection[i][:worldwide_gross]
     end
     i += 1
